@@ -1,0 +1,49 @@
+{
+  "name": "restaurant_products",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "products": {
+        "type": "array",
+        "description": "A list of products available in the restaurant.",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "description": "The name of the product."
+            },
+            "description": {
+              "type": "string",
+              "description": "A brief description of the product."
+            },
+            "price": {
+              "type": "number",
+              "description": "The price of the product."
+            },
+            "category": {
+              "type": "string",
+              "description": "The category to which the product belongs, e.g., appetizer, main course, dessert."
+            },
+            "is_available": {
+              "type": "boolean",
+              "description": "Indicates whether the product is currently available."
+            }
+          },
+          "required": [
+            "name",
+            "description",
+            "price",
+            "category",
+            "is_available"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": [
+      "products"
+    ],
+    "additionalProperties": false
+  }
+}

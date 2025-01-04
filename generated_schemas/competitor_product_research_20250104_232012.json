@@ -1,0 +1,77 @@
+{
+  "name": "competitor_product_research",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "product_name": {
+        "type": "string",
+        "description": "The name of the product."
+      },
+      "category": {
+        "type": "string",
+        "description": "The category under which the product is classified."
+      },
+      "price": {
+        "type": "number",
+        "description": "The retail price of the product."
+      },
+      "features": {
+        "type": "array",
+        "description": "A list of key features of the product.",
+        "items": {
+          "type": "string"
+        }
+      },
+      "ratings": {
+        "type": "object",
+        "description": "Customer ratings and reviews for the product.",
+        "properties": {
+          "average_rating": {
+            "type": "number",
+            "description": "The average customer rating for the product."
+          },
+          "number_of_reviews": {
+            "type": "number",
+            "description": "The total number of customer reviews for the product."
+          }
+        },
+        "required": [
+          "average_rating",
+          "number_of_reviews"
+        ],
+        "additionalProperties": false
+      },
+      "competitor_prices": {
+        "type": "array",
+        "description": "Prices of the same product from competitors.",
+        "items": {
+          "type": "object",
+          "properties": {
+            "competitor_name": {
+              "type": "string",
+              "description": "The name of the competitor."
+            },
+            "price": {
+              "type": "number",
+              "description": "The price offered by the competitor."
+            }
+          },
+          "required": [
+            "competitor_name",
+            "price"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": [
+      "product_name",
+      "category",
+      "price",
+      "features",
+      "ratings",
+      "competitor_prices"
+    ],
+    "additionalProperties": false
+  }
+}
