@@ -39,7 +39,7 @@ Start the Streamlit application:
 
 
 ## 📁 Project Structure
-.
+```Project root
 ├── app.py                  # Main Streamlit application
 ├── schema_generation.py    # Schema generation logic
 ├── system_prompt.txt      # System instructions for schema generation
@@ -47,7 +47,7 @@ Start the Streamlit application:
 ├── requirements.txt       # Project dependencies
 ├── .env                   # Environment variables (create this)
 └── generated_schemas/     # Output directory for saved schemas
-
+```
 
 ## 📝 License
 MIT License
