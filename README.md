@@ -1,7 +1,7 @@
 # OpenAI Schema Generator
 
 ## Overview
-This project provides a Streamlit-based micro web application for generating and editing valid JSON schemas for OpenAIs structured Output feature using OpenAI's API. It helps developers create, validate, and maintain structured JSON schemas through a chat-like interface. The generated schemas are automatically validated and can be saved for future use.
+This project provides a Streamlit-based micro web application for generating and editing valid JSON schemas for OpenAIs structured Output feature using OpenAI's API. It helps to create, edit and maintain structured JSON schemas through a minimalistic chat interface.
 
 ## 🚀 Features
 - Interactive chat interface for schema generation
